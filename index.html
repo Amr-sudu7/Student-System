@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My Second JavaScript Project" />
+    <meta name="author" content="Amr Fathi Mohammed" />
+    <meta name="keywords" content="HTML CSS JavaScript" />
+    <title>JS Task</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/index.responsive.css" />
+    <link rel="icon" type="image/x-icon" href="images/logo-be01d065.png" />
+  </head>
+  <body>
+    <section id="Register" class="py-5 text-center">
+      <div class="container">
+        <div class="logo mb-5">
+          <img src="images/logo-be01d065.png" alt="Registration Logo" class="img-fluid" />
+        </div>
+
+        <form action="" method="" data-type="add">
+          <h4 class="my-3 mb-4">Student System</h4>
+
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="FirstName"><i class="fa-solid fa-user"></i></label>
+            <input type="text" class="form-control" placeholder="First Name *" name="FirstName" id="FirstName" onblur="checkInput(this)" data-valid="false" />
+          </div>
+          <p class="alert alert-danger d-none" data-error-name="FirstName" role="alert"></p>
+          <div class="alert alert-warning d-none" role="alert"></div>
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="LastName"><i class="fa-solid fa-user"></i></label>
+            <input type="text" class="form-control" placeholder="Last Name *" name="LastName" id="LastName" onblur="checkInput(this)" data-valid="false" />
+          </div>
+          <p class="alert alert-danger d-none" data-error-name="LastName" role="alert"></p>
+          <div class="alert alert-warning d-none" role="alert"></div>
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="Email"><i class="fa-solid fa-envelope"></i></label>
+            <input type="text" class="form-control" placeholder="Email *" name="Email" id="Email" onblur="checkInput(this)" data-valid="false" />
+          </div>
+          <p class="alert alert-danger d-none" data-error-name="Email" role="alert"></p>
+          <div class="alert alert-warning d-none" role="alert"></div>
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="Age"><i class="fa-solid fa-hashtag"></i></label>
+            <input type="text" class="form-control" placeholder="Age *" name="Age" id="Age" onblur="checkInput(this)" data-valid="false" />
+          </div>
+          <p class="alert alert-danger d-none" data-error-name="Age" role="alert"></p>
+          <div class="alert alert-warning d-none" role="alert"></div>
+          <div class="input-group mb-3">
+            <label class="input-group-text flex-column" for="Phone"><i class="fa-solid fa-mobile"></i></label>
+            <input type="text" class="form-control" placeholder="Phone *" name="Phone" id="Phone" onblur="checkInput(this)" data-valid="false" />
+          </div>
+          <p class="alert alert-danger d-none" data-error-name="Phone" role="alert"></p>
+          <button class="btn btn-success w-100">Add</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="Search" class="pb-5">
+      <div class="container">
+        <div class="input-group mb-3">
+          <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <input type="text" class="form-control input" name="search" id="SearchInput" placeholder="Search..." autocomplete="off" />
+        </div>
+      </div>
+    </section>
+
+    <section id="Data" class="pb-5">
+      <div class="container">
+        <div class="table-responsive">
+          <table class="table table-light table-striped">
+            <thead class="table-dark">
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Phone</th>
+                <th>Option</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="TableAlert" class="table-warning text-center" colspan="7">There is no data</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

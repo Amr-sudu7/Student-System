@@ -1,0 +1,27 @@
+:root {
+  --mainColor: #a97f40;
+}
+body {
+  background: linear-gradient(to right, #243b55, #141e30);
+}
+i {
+  color: var(--mainColor);
+}
+#Register form {
+  width: 500px;
+  margin: auto;
+  padding: 10px 25px 20px 25px;
+  background: linear-gradient(to right, #eaeaea, #dbdbdb, #f2f2f2, #ada996);
+  border-radius: 20px;
+  color: var(--mainColor);
+}
+
+#Search {
+  width: 25%;
+  margin: auto;
+}
+
+table.table {
+  max-width: max-content;
+  min-width: 100%;
+}
