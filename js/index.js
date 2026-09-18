@@ -4,7 +4,7 @@ let registerForm = document.querySelector("#Register form"),
   id = 0,
   tableBody = document.querySelector("#Data tbody"),
   regex = {
-    FirstName: /^[A-Za-z]+$/,
+    FirstName: /^[A-Za-z]+$/gm,
     LastName: /^[A-Za-z]+$/,
     Email: /^[A-Za-z_][A-Za-z_0-9\.]*@(gmail|yahoo)\.(com|org)$/,
     Age: /^[0-9]{2}$/,

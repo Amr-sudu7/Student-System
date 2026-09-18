@@ -80,6 +80,10 @@ function resetForm() {
   });
 
   registerForm.setAttribute("data-type", "add");
+  btn = registerForm.querySelector("button");
+  btn.classList.remove("btn-info");
+  btn.classList.add("btn-success");
+  btn.textContent = "Add";
 }
 
 function updateLocalStorage() {
@@ -133,7 +137,7 @@ function insertStudentInForm(id) {
   registerInputs.forEach(function (input) {
     input.value = editStudent[input.name];
   });
-  formBtn.textContent = "Editing...";
+  formBtn.textContent = "Edit";
   formBtn.classList.remove("btn-success");
   formBtn.classList.add("btn-info", "text-light");
   registerForm.setAttribute("data-type", "edit");
@@ -181,6 +185,7 @@ function toggleStudentButtons() {
     let deleteButton = row.querySelector(".btn-danger");
 
     let isCurrentStudent = row.dataset.studentId == registerForm.dataset.studentId;
+    console.log(isCurrentStudent);
     if (registerForm.dataset.type === "edit" && isCurrentStudent) {
       editButton.disabled = true;
       deleteButton.disabled = true;
